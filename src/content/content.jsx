@@ -570,7 +570,7 @@ const content = {
       img: imgSteps,
       labelCards: 'Ver mais',
       label: 'Clique aqui para ver todas as matérias',
-      blogLink: 'mauromoncao.wordpress.com', //sem "https://"
+      blogLink: 'A_Definir', //sem "https://"
     },
     faq: {
       miniTag: 'TIRE SUAS DÚVIDAS',
