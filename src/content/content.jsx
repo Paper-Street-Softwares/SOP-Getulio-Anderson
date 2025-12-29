@@ -100,7 +100,7 @@ export const infos = {
       <p>Rua Francisco Paulo da Trindade,</p>
       <p>nº 52, Bairro Parque das Abelhas,</p>
       <p>Tiradentes - MG,</p>
-      <p>CEP: 36335-000</p>
+      <p>CEP: 36325-000</p>
     </div>
   ),
   enderecoSecundario: (
@@ -160,7 +160,7 @@ const content = {
       miniTag: 'ADVOGADO EM TIRADENTES - MG',
       title: (
         <h1 className="mb-[16px]">
-          Dr. Getúlio Anderson Silva
+          Advogado Getúlio Anderson Silva
           {/* <span className="text-primary"> A_Definir</span> */}
         </h1>
       ),
@@ -263,7 +263,8 @@ const content = {
         card3: {
           img: featuresImg3,
           title: 'Direito de Família',
-          subtitle: 'Atuação em divórcio, guarda, alimentos e sucessões.',
+          subtitle:
+            'Atuação em divórcio, guarda, investigação de paternidade e sucessões.',
           description: (
             <div>
               A_Definir <br />
@@ -279,7 +280,8 @@ const content = {
         card4: {
           img: featuresImg4,
           title: 'Direito Cível',
-          subtitle: 'Atuação em contratos e responsabilidade por obrigações.',
+          subtitle:
+            'Atuação em contratos e responsabilidade por obrigações e usucapião.',
           description: (
             <div>
               A_Definir
@@ -392,24 +394,27 @@ const content = {
         alt: 'Imagem ilustrativa da Seção Sobre',
         imagemMobile: aboutImgMobile,
       },
-      miniTag: 'QUEM É O DR. GETÚLIO SILVA',
-      title: 'Nossa trajetória',
+      miniTag: 'QUEM É GETÚLIO ANDERSON SILVA',
+      title: 'Minha trajetória',
       subtitle:
-        'Mais de 15 anos de advocacia com atuação sólida e compromisso com resultados.',
+        'Mais de 18 anos de advocacia com atuação sólida e compromisso com resultados.',
       paragraph: (
         <div>
-          Exerce a advocacia desde o ano de 2007, à frente do escritório,
+          Exercendo a advocacia desde o ano de 2007 e à frente do escritório,
           Getúlio Anderson Silva é especialista em Ciências Criminais pela
-          Universidade Federal de Juiz de Fora (UFJF); pós graduado em Direito
-          Penal e Processual aplicados pela Escola Brasileira de Direito
-          (EBRADI); Pós graduado em Direito Penal e Processual Penal pela Escola
-          Paulista de Direito (EPD); Mestre em educação pela Universidade
-          Federal de São João Del Rei (UFSJ) e pós graduando em Tribunal do Júri
-          pelo CEI.
+          Universidade Federal de Juiz de Fora (UFJF); pós-graduado em Direito
+          Penal e Processo Aplicados pela Escola Brasileira de Direito (EBRADI);
+          pós-graduado em Direito Penal e Processual Penal pela Escola Paulista
+          de Direito (EPD); Mestre em Educação pela Universidade Federal de São
+          João Del Rei (UFSJ) e especialista em Tribunal do Júri pelo Centro de
+          Estudo de Inteligência (CEI).
           <br />
-          Ministrou aula de direito penal e processual penal no Curso de Direito
-          do CESA, Barbacena (MG) e atuou no Núcleo de Patrícia Jurídica na
-          mesma instituição.
+          É atuante e experiente no Plenário do Tribunal do Júri, tendo atuado
+          em casos de repercussão regional.
+          <br />
+          Ministrou aulas das disciplinas: leis penais especiais, direito penal
+          e processual penal no Curso de Direito do CESA, Barbacena (MG); atuou
+          como orientador no Núcleo de Patrícia Jurídica na mesma Instituição.
         </div>
       ),
       buttonModalLabelAbout: 'Continuar lendo',
@@ -510,7 +515,7 @@ const content = {
           Enfrentando
           <span className="text-bgSectionDark">
             {' '}
-            um problema jurídico??
+            um problema jurídico?
           </span>{' '}
           Deixe que cuidamos disso
           <span className="text-bgSectionDark"> para você!</span>
