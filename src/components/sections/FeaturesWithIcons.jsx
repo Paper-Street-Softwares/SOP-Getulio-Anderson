@@ -11,8 +11,8 @@ export default function FeaturesWithIcons({ colorMode }) {
   const bgClasses = {
     dark: 'bg-bgSectionOpacityDark',
     // light: "bg-bgSectionOpacityLight",
-    light: 'squares',
-    default: 'squares',
+    light: 'bg-transparent',
+    default: 'bg-transparent',
   }
   const textClasses = {
     dark: 'text-white',
@@ -37,7 +37,7 @@ export default function FeaturesWithIcons({ colorMode }) {
         colorMode="dark"
       />
       <SectionWrapper>
-        <div className="flex flex-col items-center w-full tablet1:flex-row tablet1:justify-between desktop1:gap-x-0 desktop1:px-0">
+        <div className="flex flex-col items-center desktop1:items-start w-full tablet1:flex-row tablet1:justify-between desktop1:gap-x-0 desktop1:px-0">
           <div className="col1 tablet1:w-[50%] desktop1:w-[28%] flex flex-col justify-center items-center">
             {features
               .filter((_, index) => index < 2)
@@ -48,7 +48,7 @@ export default function FeaturesWithIcons({ colorMode }) {
                     icon={card.icon}
                     title={card.title}
                     paragraph={card.subtitle}
-                    className={`tablet1:mb-[16px] desktop1:mb-0 desktop2:mb-[46px] ${textClass}`}
+                    className={`mb-[16px] tablet1:mb-[16px] desktop1:mb-[16px] desktop2:mb-[46px] ${textClass}`}
                     colorMode={colorMode}
                   />
                 </MotionDivDownToUp>
@@ -74,7 +74,7 @@ export default function FeaturesWithIcons({ colorMode }) {
                     icon={card.icon}
                     title={card.title}
                     paragraph={card.subtitle}
-                    className={`tablet1:mb-[16px] desktop1:mb-0 desktop2:mb-[46px] ${textClass}`}
+                    className={`mb-[16px] tablet1:mb-[16px] desktop1:mb-[16px]  desktop2:mb-[46px] ${textClass}`}
                     colorMode={colorMode}
                   />
                 </MotionDivDownToUp>

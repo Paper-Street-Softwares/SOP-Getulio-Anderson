@@ -1,16 +1,16 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import content, { infos } from "../../../content/content"; // importa direto a const infos
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import content, { infos } from '../../../content/content' // importa direto a const infos
 
 function CopyrightFooter() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear()
 
   return (
     <div className="text-center w-full phone2:w-[90%] max-w-[1110px] flex flex-col">
-      <p className="w-full opacity-75">
+      <p className="w-full opacity-60">
         {`${content.texts.footer.copyrightLine}`}
       </p>
-      <p>
+      <p className="opacity-60">
         <a
           className="transition hover:underline"
           target="_blank"
@@ -20,7 +20,7 @@ function CopyrightFooter() {
         </a>
       </p>
     </div>
-  );
+  )
 }
 
-export default CopyrightFooter;
+export default CopyrightFooter

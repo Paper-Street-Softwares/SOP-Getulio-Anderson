@@ -1,7 +1,7 @@
-import React from "react";
-import { FileSliders, Mail } from "lucide-react";
-import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
-import content from "../../../content/content";
+import React from 'react'
+import { FileSliders, Mail } from 'lucide-react'
+import MotionDivDownToUp from '../../animation/MotionDivDownToUp'
+import content from '../../../content/content'
 
 function EmailFooter({
   emailOne = true,
@@ -14,7 +14,7 @@ function EmailFooter({
     <>
       {emailOne && (
         <MotionDivDownToUp>
-          <div className="flex full gap-x-[12px] items-center opacity-90">
+          <div className="flex full gap-x-[12px] items-center opacity-60">
             <span>
               <Mail />
             </span>
@@ -26,11 +26,11 @@ function EmailFooter({
 
       {emailTwo && (
         <MotionDivDownToUp>
-          <div className="flex full gap-x-[12px] items-center opacity-90">
+          <div className="flex full gap-x-[12px] items-center opacity-60">
             <Mail />
 
             <p className="text-paragraph3">
-              {content.texts.infos.emailSecundario}{" "}
+              {content.texts.infos.emailSecundario}{' '}
             </p>
           </div>
         </MotionDivDownToUp>
@@ -38,7 +38,7 @@ function EmailFooter({
 
       {emailThree && (
         <MotionDivDownToUp>
-          <div className="flex full gap-x-[12px] items-center opacity-90">
+          <div className="flex full gap-x-[12px] items-center opacity-60">
             <Mail />
 
             <p className="text-paragraph3">{content.texts.infos.emailThree}</p>
@@ -48,7 +48,7 @@ function EmailFooter({
 
       {emailFour && (
         <MotionDivDownToUp>
-          <div className="flex full gap-x-[12px] items-center opacity-90">
+          <div className="flex full gap-x-[12px] items-center opacity-60">
             <Mail />
 
             <p className="text-paragraph3">{content.texts.infos.emailFour}</p>
@@ -58,7 +58,7 @@ function EmailFooter({
 
       {emailFive && (
         <MotionDivDownToUp>
-          <div className="flex full gap-x-[12px] items-center opacity-90">
+          <div className="flex full gap-x-[12px] items-center opacity-60">
             <Mail />
 
             <p className="text-paragraph3">{content.texts.infos.emailFive}</p>
@@ -66,7 +66,7 @@ function EmailFooter({
         </MotionDivDownToUp>
       )}
     </>
-  );
+  )
 }
 
-export default EmailFooter;
+export default EmailFooter

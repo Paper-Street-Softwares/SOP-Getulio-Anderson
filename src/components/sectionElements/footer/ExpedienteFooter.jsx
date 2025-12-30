@@ -1,15 +1,14 @@
-import React from "react";
-import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
-import { CalendarCheck2 } from "lucide-react";
-import content from "../../../content/content";
+import React from 'react'
+import MotionDivDownToUp from '../../animation/MotionDivDownToUp'
+import { CalendarCheck2 } from 'lucide-react'
+import content from '../../../content/content'
 
 function ExpedienteFooter({ showSecond = false }) {
-
   return (
     <>
       {/* Expediente principal */}
       <MotionDivDownToUp>
-        <div className="flex full gap-x-[12px] items-center opacity-90 text-paragraph2">
+        <div className="flex full gap-x-[12px] items-center opacity-60 text-paragraph2">
           <div>
             <CalendarCheck2 />
           </div>
@@ -21,7 +20,7 @@ function ExpedienteFooter({ showSecond = false }) {
 
       {showSecond && (
         <MotionDivDownToUp>
-          <div className="flex full gap-x-[12px] items-center opacity-90">
+          <div className="flex full gap-x-[12px] items-center opacity-60">
             <div>
               <CalendarCheck2 />
             </div>
@@ -32,7 +31,7 @@ function ExpedienteFooter({ showSecond = false }) {
         </MotionDivDownToUp>
       )}
     </>
-  );
+  )
 }
 
-export default ExpedienteFooter;
+export default ExpedienteFooter

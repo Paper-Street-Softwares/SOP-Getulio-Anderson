@@ -23,7 +23,7 @@ function PhoneFooter({ colorMode, phoneTwo = false, phoneThree = false }) {
   return (
     <>
       <MotionDivDownToUp>
-        <div className="flex full gap-x-[12px] items-center opacity-90">
+        <div className="flex full gap-x-[12px] items-center opacity-60">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width={24}
@@ -46,7 +46,7 @@ function PhoneFooter({ colorMode, phoneTwo = false, phoneThree = false }) {
 
       {phoneTwo && (
         <MotionDivDownToUp>
-          <div className="flex full gap-x-[12px] items-center opacity-90">
+          <div className="flex full gap-x-[12px] items-center opacity-60">
             <PhoneCall
               size={24}
               color={colorMode === 'light' ? 'black' : 'currentColor'}
@@ -74,7 +74,7 @@ function PhoneFooter({ colorMode, phoneTwo = false, phoneThree = false }) {
 
       {phoneThree && (
         <MotionDivDownToUp>
-          <div className="flex full gap-x-[12px] items-center opacity-90">
+          <div className="flex full gap-x-[12px] items-center opacity-60">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}

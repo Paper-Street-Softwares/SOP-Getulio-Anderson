@@ -1,31 +1,29 @@
-
-import { useNavigate } from "react-router-dom";
-import Paragraphs from "../sectionElements/Paragraphs";
-import SectionArea from "../sectionElements/SectionArea";
-import SectionHeader from "../sectionElements/SectionHeader";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import AccordionExpandDefault from "../interactives/AcordionTwo";
-import Button from "../interactives/Button";
-import content from "../../content/content";
+import { useNavigate } from 'react-router-dom'
+import Paragraphs from '../sectionElements/Paragraphs'
+import SectionArea from '../sectionElements/SectionArea'
+import SectionHeader from '../sectionElements/SectionHeader'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import AccordionExpandDefault from '../interactives/AcordionTwo'
+import Button from '../interactives/Button'
+import content from '../../content/content'
 
 export default function Faq({ colorMode }) {
-
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   // Classes de tema
   const bgClasses = {
-    dark: "bg-bgFixedDark",
-    light: "bg-bgFixedLight",
-    default: "squares",
-  };
+    dark: 'bg-bgFixedDark',
+    light: 'bg-bgFixedLight',
+    default: 'bg-transparent',
+  }
   const textClasses = {
-    dark: "text-white",
-    light: "text-secondary",
-    default: "text-black",
-  };
-  const bgClass = bgClasses[colorMode] || bgClasses.default;
-  const titleColor = textClasses[colorMode] || textClasses.default;
+    dark: 'text-white',
+    light: 'text-secondary',
+    default: 'text-black',
+  }
+  const bgClass = bgClasses[colorMode] || bgClasses.default
+  const titleColor = textClasses[colorMode] || textClasses.default
 
   return (
     <SectionArea id="faq" className={`${bgClass}`}>
@@ -55,5 +53,5 @@ export default function Faq({ colorMode }) {
         </MotionDivDownToUp>
       </SectionWrapper>
     </SectionArea>
-  );
+  )
 }

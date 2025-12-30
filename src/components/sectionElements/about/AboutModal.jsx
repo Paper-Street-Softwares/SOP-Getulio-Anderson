@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { Dialog } from "primereact/dialog";
-import { X, MoveRight } from "lucide-react";
-import Button from "../../interactives/Button";
-import content from "../../../content/content";
+import React, { useState } from 'react'
+import { Dialog } from 'primereact/dialog'
+import { X, MoveRight } from 'lucide-react'
+import Button from '../../interactives/Button'
+import content from '../../../content/content'
 
 export default function AboutModal() {
-  const [visible, setVisible] = useState(false);
-  const [modalContent, setModalContent] = useState("");
-  const [modalTitle, setModalTitle] = useState("");
+  const [visible, setVisible] = useState(false)
+  const [modalContent, setModalContent] = useState('')
+  const [modalTitle, setModalTitle] = useState('')
 
   const onClick = () => {
-    setModalTitle(content.texts.about.title);
+    setModalTitle(content.texts.about.title)
 
     setModalContent(
       <div className="text-paragraph3 text-black">
@@ -38,10 +38,10 @@ export default function AboutModal() {
           />
         </div>
       </div>
-    );
+    )
 
-    setVisible(true);
-  };
+    setVisible(true)
+  }
 
   return (
     <div>
@@ -61,11 +61,11 @@ export default function AboutModal() {
         header={<span className="text-black">{modalTitle}</span>}
         visible={visible}
         onHide={() => setVisible(false)}
-        style={{ width: "50vw" }}
-        breakpoints={{ "4000px": "641px", "1024px": "641px", "641px": "85vw" }}
+        style={{ width: '50vw' }}
+        breakpoints={{ '4000px': '641px', '1024px': '641px', '641px': '85vw' }}
       >
         {modalContent}
       </Dialog>
     </div>
-  );
+  )
 }
