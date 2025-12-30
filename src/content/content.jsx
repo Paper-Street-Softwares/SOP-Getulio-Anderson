@@ -281,7 +281,7 @@ const content = {
           img: featuresImg4,
           title: 'Direito Cível',
           subtitle:
-            'Atuação em contratos e responsabilidade por obrigações e usucapião.',
+            'Atuação em contratos, responsabilidade por obrigações e usucapião.',
           description: (
             <div>
               A_Definir
