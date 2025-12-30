@@ -4,7 +4,7 @@ import { useTranslation, Trans } from 'react-i18next'
 
 export default function ParagraphSemFading() {
   return (
-    <Paragraphs className="text-white text-opacity-80">
+    <Paragraphs className="text-white text-opacity-60">
       {content.texts.about.paragraph}
     </Paragraphs>
   )

@@ -1,15 +1,15 @@
-import React from "react";
-import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
-import { MapPin } from "lucide-react";
-import { useTranslation } from "react-i18next";
-import content from "../../../content/content";
+import React from 'react'
+import MotionDivDownToUp from '../../animation/MotionDivDownToUp'
+import { MapPin } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
+import content from '../../../content/content'
 
 function AdressFooter({ showSecond = false }) {
   return (
     <>
       {/* Endereço principal */}
       <MotionDivDownToUp>
-        <div className="flex full gap-x-[12px] items-center opacity-90 text-paragraph3 desktop1:text-paragraph3">
+        <div className="flex full gap-x-[12px] items-center opacity-60 text-paragraph3 desktop1:text-paragraph3">
           <div>
             <MapPin />
           </div>
@@ -20,7 +20,7 @@ function AdressFooter({ showSecond = false }) {
       {/* Endereço secundário */}
       {showSecond && (
         <MotionDivDownToUp>
-          <div className="flex full gap-x-[12px] items-center opacity-90">
+          <div className="flex full gap-x-[12px] items-center opacity-60">
             <div>
               <MapPin />
             </div>
@@ -30,7 +30,7 @@ function AdressFooter({ showSecond = false }) {
         </MotionDivDownToUp>
       )}
     </>
-  );
+  )
 }
 
-export default AdressFooter;
+export default AdressFooter

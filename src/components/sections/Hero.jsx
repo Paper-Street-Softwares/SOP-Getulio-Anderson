@@ -52,7 +52,7 @@ export default function Hero({
 
         <MotionDivDownToUp>
           <div className="flex justify-center w-full text-center desktop1:text-left desktop1:justify-start font-secondFont text-paragraph4 phone3:text-paragraph5">
-            <p className={`mb-[32px] ${subtitleTextColor}`}>
+            <p className={`mb-[32px] text-opacity-60 ${subtitleTextColor}`}>
               {content.texts.hero.subtitle}
             </p>
           </div>
@@ -82,11 +82,11 @@ export default function Hero({
 
             <div className="flex justify-center desktop1:justify-start">
               <div
-                className={`flex items-center desktop1:flex-row ${obsTextColorOverride}`}
+                className={`flex items-center desktop1:flex-row text-opacity-60 ${obsTextColorOverride}`}
               >
                 <span>{content.texts.hero.obsHero.icon}</span>
                 <p
-                  className={`ml-[10px] text-center font-secondFont desktop1:text-start desktop1:mt-0 ${obsTextColorOverride}`}
+                  className={`ml-[10px] text-opacity-60 text-center font-secondFont desktop1:text-start desktop1:mt-0 ${obsTextColorOverride}`}
                 >
                   {content.texts.hero.obsHero.text}
                 </p>
@@ -116,8 +116,8 @@ export default function Hero({
   if (panoramica) {
     HeroContent = renderHeroContent({
       minititleColor: isMobile
-        ? 'bg-minititle text-black'
-        : 'bg-primary text-minititleDarkLabel',
+        ? 'bg-transparent text-black'
+        : 'bg-transparent text-minititleDarkLabel',
       titleTextColor: isMobile ? 'text-primary' : 'text-primary',
       subtitleTextColor: isMobile ? 'text-black' : 'text-primary',
       obsTextColorOverride: isMobile ? 'text-black' : 'text-primary',
@@ -125,8 +125,8 @@ export default function Hero({
   } else if (influencer) {
     HeroContent = renderHeroContent({
       minititleColor: isMobile
-        ? 'bg-minititle text-black'
-        : 'bg-primary text-minititleDarkLabel',
+        ? 'bg-transparent text-black'
+        : 'bg-transparent text-minititleDarkLabel',
       titleTextColor: isMobile ? 'text-primary' : 'text-primary',
       subtitleTextColor: 'text-primary',
       obsTextColorOverride: 'text-primary',
@@ -134,8 +134,8 @@ export default function Hero({
   } else {
     HeroContent = renderHeroContent({
       minititleColor: isMobile
-        ? 'bg-minititle text-minititleLightLabel'
-        : 'bg-minititle text-minititleDarkLabel',
+        ? 'bg-transparent text-primary'
+        : 'bg-transparent text-primary',
       titleTextColor: 'text-white',
       subtitleTextColor: 'text-white',
       obsTextColorOverride: 'text-white',
@@ -278,7 +278,7 @@ export default function Hero({
                   <div className="flex  flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
                     <MotionDivDownToUp>
                       <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4">
-                        <p className="mb-[16px] bg-minititleDarkLabel text-primary bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
+                        <p className="mb-[16px] bg-transparent text-primary bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
                           {content.texts.hero.miniTag}
                         </p>
                       </div>
@@ -366,7 +366,7 @@ export default function Hero({
                       <div className="flex flex-col w-full desktop1:w-[50%] ">
                         <MotionDivDownToUp>
                           <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4">
-                            <p className="mb-[16px] bg-primary text-minititleDarkLabel bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
+                            <p className="mb-[16px] bg-transparent text-minititleDarkLabel bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
                               {content.texts.hero.miniTag}
                             </p>
                           </div>
