@@ -35,7 +35,7 @@ export default function Hero({
         <MotionDivDownToUp>
           <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-mainFont text-paragraph4">
             <p
-              className={`mb-[16px] rounded-md px-[16px] py-[6px] inline-block text-paragraph2 ${minititleColor}`}
+              className={`mb-[16px] rounded-md inline-block font-bold text-paragraph2 ${minititleColor}`}
             >
               {content.texts.hero.miniTag}
             </p>

@@ -24,7 +24,7 @@ export default function SectionHeader({
   // Configurações baseadas no colorMode
   switch (colorMode) {
     case 'dark':
-      miniTitleTextColor = miniTitleTextColor ?? 'text-minititleLightLabel'
+      miniTitleTextColor = miniTitleTextColor ?? 'text-primary'
       titleColor = titleColorSet ?? 'text-white'
       subtitleColor = subtitleColorSet ?? 'text-white'
       if (miniTitleBgColor === true) miniTitleBgColor = 'bg-transparent'
@@ -58,7 +58,7 @@ export default function SectionHeader({
       <div>
         <div className={`${miniTitleSpace}`}>
           <div
-            className={`font-semibold font-mainFont text-paragraph2 rounded-md inline-block mb-[16px] ${miniTitleOrientation} ${miniTitleBgColor}`}
+            className={`font-bold font-mainFont text-paragraph2 rounded-md inline-block mb-[16px] ${miniTitleOrientation} ${miniTitleBgColor}`}
           >
             <p className={`${miniTitleTextColor} uppercase`}>{miniTitle}</p>
           </div>
