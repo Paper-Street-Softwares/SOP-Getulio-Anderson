@@ -412,8 +412,8 @@ const content = {
           É atuante e experiente no Plenário do Tribunal do Júri, tendo atuado
           em casos de repercussão regional.
           <br />
-          Ministrou aulas das disciplinas: leis penais especiais, direito penal
-          e processual penal no Curso de Direito do CESA, Barbacena (MG); atuou
+          Ministrou aulas das disciplinas: Leis Penais Especiais, Direito Penal
+          e Processual Penal no Curso de Direito do CESA, Barbacena (MG); atuou
           como orientador no Núcleo de Patrícia Jurídica na mesma Instituição.
         </div>
       ),
