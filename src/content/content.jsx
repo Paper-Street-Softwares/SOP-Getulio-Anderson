@@ -406,7 +406,7 @@ const content = {
           Penal e Processo Aplicados pela Escola Brasileira de Direito (EBRADI);
           pós-graduado em Direito Penal e Processual Penal pela Escola Paulista
           de Direito (EPD); Mestre em Educação pela Universidade Federal de São
-          João Del Rei (UFSJ) e especialista em Tribunal do Júri pelo Centro de
+          João del-Rei (UFSJ) e especialista em Tribunal do Júri pelo Centro de
           Estudo de Inteligência (CEI).
           <br />
           É atuante e experiente no Plenário do Tribunal do Júri, tendo atuado
@@ -414,7 +414,7 @@ const content = {
           <br />
           Ministrou aulas das disciplinas: Leis Penais Especiais, Direito Penal
           e Processual Penal no Curso de Direito do CESA, Barbacena (MG); atuou
-          como orientador no Núcleo de Patrícia Jurídica na mesma Instituição.
+          como orientador no Núcleo de Prática Jurídica na mesma Instituição.
         </div>
       ),
       buttonModalLabelAbout: 'Continuar lendo',
